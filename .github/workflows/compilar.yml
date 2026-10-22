@@ -1,0 +1,26 @@
+name: Compilar Next Layout
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Versión original (vacío: la última)"
+        type: string
+        default: ""
+      publicar:
+        description: "Publicar la versión"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  compilar:
+    uses: jacnexstudio/jacnex-build/.github/workflows/compilar-windows.yml@main
+    with:
+      proyecto: designcraft
+      upstream: storytold/designcraft
+      nombre: Next Layout
+      ref: ${{ inputs.ref }}
+      publicar: ${{ inputs.publicar }}
