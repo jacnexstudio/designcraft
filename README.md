@@ -1,4 +1,4 @@
-# Next Layout
+# Layoutnex
 
 Maquetación y publicación. Parte de la suite Jacnex.
 

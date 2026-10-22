@@ -1,4 +1,4 @@
-name: Compilar Next Layout
+name: Compilar Layoutnex
 
 on:
   workflow_dispatch:
@@ -21,6 +21,6 @@ jobs:
     with:
       proyecto: designcraft
       upstream: storytold/designcraft
-      nombre: Next Layout
+      nombre: Layoutnex
       ref: ${{ inputs.ref }}
       publicar: ${{ inputs.publicar }}
